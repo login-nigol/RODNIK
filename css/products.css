@@ -29,6 +29,6 @@
     font-weight: 700;
 }
 
-@media ( max-width: 1024px ) {
-    /* .product-card { flex-basis: calc((100% - 1.5em) / 2); } */
-}
+/* @media ( max-width: 1024px ) {
+    .product-card { flex-basis: calc((100% - 1.5em) / 2); }
+} */
