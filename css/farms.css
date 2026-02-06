@@ -23,6 +23,11 @@
     transform: translateY(-0.1em);
 }
 
-@media ( max-width: 1024px ) {
-    .farm { flex-basis: calc(100% - 1.5em); }
+@media ( max-width: 768px ) {
+    .farm:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    /* .farm { flex-basis: calc(100% - 1.5em); } */
+
 }

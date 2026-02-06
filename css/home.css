@@ -28,3 +28,17 @@
     text-indent: 1.5em; /* сдвиг первой строки */
     line-height: 1.6;
 }
+
+@media ( max-width: 768px ) {
+    .home {
+        border: none;
+    }
+
+    .home h3 {
+        font-size: 0.8em;
+    }
+
+    .home h4 {
+        font-size: 0.7em;
+    }
+}

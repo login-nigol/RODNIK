@@ -29,7 +29,7 @@
 }
 
 /* кнопки карточек продуктов и корзины */
-.product-card__add,
+/* .product-card__add, */
 .cart-bar__clear,
 .breadcrumbs__back {
     font-size: clamp(0.8em, 1.2vw, 1em);
@@ -51,9 +51,27 @@
     background-color: #aed581;
 }
 
+/* иконка корзины */
+.product-card__add {
+    display: inline-block;
+    width: clamp(2em, 3vw, 3em);
+    height: clamp(2em, 3vw, 3em);
+    
+    margin-top: 0.5em;
+    padding: 0.3em;
+    border: 0.15em solid #e0e0e0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
 @media ( max-width: 768px ) {
+    .farms {
+        gap: 0.3em;
+    }
     .farm {
         flex: 0 0 100%;
+        padding: 0.3em;
+        margin-top: 0.3em;
     }
     /* .farm, */
     .product-card,

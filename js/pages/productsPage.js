@@ -36,13 +36,21 @@ export function renderProductsPage(contentEl) {
 
             <div class="product-card__header">
                 <div class="product-card__text">
-                    <h4 class="product-card__title">${prod.title}</h4>
+                    <h4 class="product-card__title">
+                    ${prod.title}
+                    </h4>
 
-                    <p class="product-card__price">${prod.price} BYN/${prod.unit}</p>
+                    <p class="product-card__price">
+                    ${prod.price} BYN/${prod.unit}
+                    </p>
                 </div>
 
-                <button class="product-card__add" data-product-id="${prod.id}">
-                    В корзину
+                <button class="product-card__add"
+                        data-product-id="${prod.id}"
+                        aria-label="Добавить в корзину">
+                    <img src="./img/buttons/cart.svg"
+                            alt=""
+                            class="icon icon--cart">
                 </button>
             </div>
         </article>
