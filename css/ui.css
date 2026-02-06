@@ -1,0 +1,65 @@
+/* ui.css - общие стили */
+.farms,
+.products__grid,
+.cart-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.farm,
+.product-card,
+.cart-item {
+    flex: 0 0 calc((100% - 3em) / 3);
+    padding: 1em;
+    border: 0.1em solid #e0e0e0;
+    border-radius: 0.5em;
+    background: #f0f0f0;
+    text-align: center;
+
+    /* cursor: pointer; */
+}
+
+.farm img,
+.product-card img,
+.cart-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* кнопки карточек продуктов и корзины */
+.product-card__add,
+.cart-bar__clear,
+.breadcrumbs__back {
+    font-size: clamp(0.8em, 1.2vw, 1em);
+    padding: 0.3em 0.4em;
+    border-radius: 0.5em;
+    border: 0.15em solid #e0e0e0;
+    cursor: pointer;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.product-card__add:hover,
+.cart-bar__clear:hover,
+.breadcrumbs__back:hover {
+    background-color: #dcedc8;
+}
+.product-card__add:active,
+.cart-bar__clear:active,
+.breadcrumbs__back:active {
+    background-color: #aed581;
+}
+
+@media ( max-width: 768px ) {
+    .farm {
+        flex: 0 0 100%;
+    }
+    /* .farm, */
+    .product-card,
+    .cart-item {
+        flex: 0 0 calc((100% - 1.5em) / 2);
+        /* max-width: calc((100% - 1.5em) / 2); */
+        /* height: 0; */
+    }
+}

@@ -1,0 +1,23 @@
+/* menu_burger.css - выпадающее меню */
+.burger {
+    /* display: none; */
+    padding: 0.2em 0.4em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+@media ( max-width: 768px ) {
+    .burger {
+        display: inline-block;
+    }
+
+    /* боковое меню скрыто */
+    /* .menu {
+        display: none;
+    } */
+
+    /* меню открыто */
+    /* .menu.is-open {
+        display: block;
+    } */
+}

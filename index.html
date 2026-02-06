@@ -1,0 +1,68 @@
+<!--
+Автор: Вадим Антипов
+Дата: 28.01.2026
+-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+  <title>РОДНИКЪ - Фермерские продукты</title>
+  <link rel="icon" href="./img/iconlogo_v2.png" type="image/png">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">РОДНИКЪ</div>
+
+    <form class="header__search" action="#" role="search">
+      <input type="search" class="header__search-input"
+        placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+    </form>
+
+
+    <div class="header__login">
+      <button class="burger" type="button" aria-label="Открыть меню"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <a href="#" class="header__login-link">Вход</a>
+    </div>
+  </header>
+
+  <nav id="menu" class="menu">
+    <ul class="menu__list">
+      <li>
+        <a href="#home" data-page="home">Главная</a>
+      </li>
+      <li>
+        <a href="#farms" data-page="farms">Фермы</a>
+      </li>
+      <li>
+        <a href="#products" data-page="products">Продукты</a>
+      </li>
+      <li>
+        <a href="#cart" data-page="cart">Корзина</a>
+      </li>
+    </ul>
+
+    <a href="#organizer" class="menu__organizer"
+      data-page="organizer">Органайзер</a>
+  </nav>
+
+  <main id="content" class="content">
+    main - контейнер для фермерского продукта: фото + описание
+  </main>
+
+  <footer>
+    контейнер: разобьём на два - 1 все права защищещны, 2 кнопка контакт телега
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>

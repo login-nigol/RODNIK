@@ -1,0 +1,87 @@
+/* стилизация левого меню */
+.menu {
+    grid-area: menu;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: visible; /* если у .menu/родителя где-то появится overflow: hidden, эффект пропадёт */
+    
+    /* border: dotted 1px red; */
+}
+
+.menu__list {
+    flex: 1;
+    padding-top: 2em;
+    list-style: none;
+
+    /* border: dotted 1px red; */
+}
+
+.menu__list li {
+    width: 80%;
+    margin: 0 0 1em 10%;
+
+    transition: transform 200ms ease;
+    padding: 0.3em;
+    text-align: center;
+    cursor: pointer;
+    background: #ccc;
+    list-style: none;
+    
+    /* border: dotted 1px red; */
+}
+
+.menu__list a {
+    display: block;
+    width: 100%;
+}
+
+.menu li.is-active {
+    transform: translateX(13%);
+}
+
+.menu__organizer {
+    text-align: center;
+    padding: 0.8em 0;
+}
+
+@media ( max-width: 768px ) {
+    .menu {
+        grid-area: unset; /* выкидываю из грида */
+        position: absolute;
+        margin-top: clamp(2.1em, 4vh, 3em);
+        /* top: 100%; */
+        left: 20%;
+        right: 0;
+
+        /* gap: 0; */
+        /* margin: 10em; */
+        /* grid-area: header; */
+        /* align-self: end; внизу шапки */
+
+        z-index: 100;
+
+        background: #ccc;
+        border-radius: 0.5em;
+
+        /* закрыто */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(0.5em);
+        pointer-events: none; /* по закрытому меню нельзя кликать/тапать */
+
+        transition: 
+            max-height 1s ease,
+            opacity 0.5s ease,
+            transform 1s ease;
+    }
+
+    .menu.is-open {
+        max-height: 60vh;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}

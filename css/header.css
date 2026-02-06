@@ -1,0 +1,57 @@
+/* стилизация шапки */
+header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+    'logo center login';
+    align-items: center;
+
+    /* border: dotted 1px green; */
+}
+
+/* логотип */
+.header__logo {
+    grid-area: logo;
+
+    /* border: dotted 1px green; */
+}
+
+.header__search {
+    grid-area: center;
+    
+    display: flex;
+    justify-content: center;
+    /* width: 70%; */
+
+    /* border: dotted 1px green; */
+}
+
+.header__search-input {
+    width: 50%;
+    padding: 0.5em;
+
+    border: 0.2em solid #ccc;
+    border-radius: 0.5em;
+}
+
+.header__login {
+    grid-area: login;
+    
+    justify-self: end;
+    margin-right: 1em;
+
+    /* border: dotted 1px green; */
+}
+
+@media ( max-width: 768px ) {
+    .header {
+        position: relative;
+        z-index: 200;
+    }
+
+    .header__search-input {
+        min-width: 100%;
+    }
+}

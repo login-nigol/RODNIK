@@ -1,0 +1,50 @@
+/* cart.css */
+.cart {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cart h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.cart-list {
+    overflow-y: auto;
+    align-content: flex-start; /* чтобы ряды не растягивались */
+}
+
+.cart-item__info {
+    font-size: clamp(0.8em, 1.2vw, 1em);
+    margin-top: 0.3em;
+}
+
+/* чтобы было место под фикс-бар и он не перекрыввал карточки */
+#cartContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
+
+/* фикс-бар снизу внутри контент-контейнера */
+.cart-bar {
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+
+    padding: 0.3em;
+    border-top: 0.2em solid #e0e0e0;
+}
+
+.cart-bar__total {
+    font-weight: 700;
+}
+
+@media ( max-width: 1024px ) {
+    /* .cart-item { flex-basis: calc((100% - 1.5em) / 2); } */
+}

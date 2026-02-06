@@ -1,0 +1,34 @@
+/* css/products.css */
+.products h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+/* шапка карточки товара */
+.product-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2em;
+}
+
+.product-card__text {
+    font-size: clamp(0.7em, 1.3vw, 1.1em);
+}
+
+/* наименование товара */
+.product-card__title {
+    margin-top: 0.3em;
+    /* font-size: 1em; */
+}
+
+/* цена товара */
+.product-card__price {
+    white-space: nowrap;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+@media ( max-width: 1024px ) {
+    /* .product-card { flex-basis: calc((100% - 1.5em) / 2); } */
+}

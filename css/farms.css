@@ -1,0 +1,28 @@
+/* farms.css - стилизация ферм */
+/* карточка кликабельна */
+
+.farm {
+    cursor: pointer;
+}
+
+.farms h4, p {
+    font-size: clamp(0.8em, 1.2vw, 1em);
+}
+
+.farm:hover {
+    transform:  translateY(-0.3em);
+    box-shadow:  0 0.8em 2em rgba(0, 0, 0, 0.12);
+}
+
+/* кнопка возврата к фермам из продуктов */
+.breadcrumbs__back {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.breadcrumbs__back:hover {
+    transform: translateY(-0.1em);
+}
+
+@media ( max-width: 1024px ) {
+    .farm { flex-basis: calc(100% - 1.5em); }
+}

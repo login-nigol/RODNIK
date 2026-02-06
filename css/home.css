@@ -1,0 +1,30 @@
+/* настройки страницы home.html */
+.home {
+
+    border: solid 3px #ccc;
+    border-radius: 0.5em;
+}
+
+/* clamp(МИН, ЖЕЛАЕМОЕ, МАКС) */
+/* 2vw - коэффициент чувствительности/адаптация: 2vw = 2% от ширины окна */
+.home h3 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: clamp(1.1em, 2vw, 1.5em);
+}
+.home h4 { 
+    text-align: center;
+    /* margin: 0 10em; */
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
+    font-size: clamp(0.8em, 1.1vw, 1.2em);
+    border-bottom: solid 0.15em lightgreen;
+}
+
+.home p {
+    /* max-width: 100ch; читабельная ширина текста */
+    margin: 0 5% 1em 5%;
+    font-size: clamp(0.9em, 1.5vw, 1.1em);
+    text-indent: 1.5em; /* сдвиг первой строки */
+    line-height: 1.6;
+}
