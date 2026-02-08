@@ -6,6 +6,7 @@ const ROUTES = {
     farms: './pages/farms.html',
     products: './pages/products.html',
     cart: './pages/cart.html',
+    contact: './pages/contact.html',
     organizer: './pages/organizer.html',
 };
 
@@ -14,6 +15,7 @@ const TITLES = {
     farms: 'РОДНИКЪ - Фермы',
     products: 'РОДНИКЪ - Продукты',
     cart: 'РОДНИКЪ - Корзина',
+    contact: 'РОДНИКЪ - Контакт',
     organizer: 'РОДНИКЪ - Органайзер проекта',
 };
 

@@ -22,13 +22,15 @@
     width: 80%;
     margin: 0 0 1em 10%;
 
-    transition: transform 200ms ease;
-    padding: 0.3em;
     text-align: center;
-    cursor: pointer;
-    background: #ccc;
-    list-style: none;
+    padding: 0.4em;
+    background: #9ec9a899;
+    border-radius: 0.5em;
+
+    transition: transform 300ms ease;
     
+    list-style: none;
+    cursor: pointer;
     /* border: dotted 1px red; */
 }
 

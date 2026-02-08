@@ -15,7 +15,24 @@ header {
 .header__logo {
     grid-area: logo;
 
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+
     /* border: dotted 1px green; */
+}
+
+/* svg-logo */
+.logo-svg {
+    display: block;
+    height: 3em;
+    width: auto;
+    fill: green;
+    /* font-size: 20px; */
+}
+
+.logo-label {
+    width: 3.5em;
 }
 
 .header__search {

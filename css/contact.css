@@ -1,0 +1,47 @@
+/* css/contact.css */
+.title {
+    text-align: center;
+    /* margin-top: 3em; */
+}
+
+.contact-form {
+    width: 25em;
+    min-width: 1em;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.contact-row input,
+.contact-row textarea {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+.contact-row textarea {
+    font-size: 1.3em;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 0.3em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    border: 1px solid #ccc;
+    color: #424242;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    align-items: center;
+    /* margin-top: 3em; */
+}
+
+.message {
+    font-size: 2em;
+}

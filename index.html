@@ -16,7 +16,24 @@
 
 <body>
   <header class="header">
-    <div class="header__logo">РОДНИКЪ</div>
+    <div class="header__logo">
+      <svg class="logo-svg"
+          viewBox="0 0 180 50"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="РОДНИКЪ — продукты с грядки"
+          role="img">
+
+        <!-- название -->
+        <text class="logo-svg_title" x="60" y="20">РОДНИКЪ</text>
+
+        <!-- подпись -->
+        <text x="7" y="35">продукты с грядки</text>
+      </svg>
+
+      <img src="./img/logo.png" 
+            alt="Натуральный продукт"
+            class="logo-label">
+    </div>
 
     <form class="header__search" action="#" role="search">
       <input type="search" class="header__search-input"
@@ -46,7 +63,7 @@
   </header>
 
   <nav id="menu" class="menu">
-    <ul class="menu__list">
+    <ol class="menu__list">
       <li>
         <a href="#home" data-page="home">Главная</a>
       </li>
@@ -59,7 +76,10 @@
       <li>
         <a href="#cart" data-page="cart">Корзина</a>
       </li>
-    </ul>
+      <li>
+        <a href="#contact" data-page="contact">Контакт</a>
+      </li>
+    </ol>
 
     <a href="#organizer" class="menu__organizer"
       data-page="organizer">Органайзер</a>
@@ -70,7 +90,15 @@
   </main>
 
   <footer>
-    контейнер: разобьём на два - 1 все права защищещны, 2 кнопка контакт телега
+    <div class="footer__left">
+    <span id="year"></span>&reg; РОДНИКЪ — все права защищены
+  </div>
+
+  <div class="footer__right">
+    <a href="https://t.me/vadimalmata" class="footer__link">@vadimalmata</a>
+    <!-- <span class="footer__sep">·</span> -->
+    <!-- <a href="mailto:info@rodnik.by" class="footer__link">Написать нам</a> -->
+  </div>
   </footer>
 
   <script type="module" src="./js/app.js"></script>
