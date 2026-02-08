@@ -13,7 +13,6 @@
 .menu__list {
     flex: 1;
     padding-top: 2em;
-    list-style: none;
 
     /* border: dotted 1px red; */
 }
@@ -64,8 +63,8 @@
 
         z-index: 100;
 
-        background: #ccc;
-        border-radius: 0.5em;
+        background: rgba(238, 238, 238, 0.9);
+        border-radius: 0.7em;
 
         /* закрыто */
         max-height: 0;
@@ -83,7 +82,7 @@
     .menu.is-open {
         max-height: 60vh;
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(10);
         pointer-events: auto;
     }
 }

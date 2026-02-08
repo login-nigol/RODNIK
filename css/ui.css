@@ -82,6 +82,11 @@
     fill: #777;
 }
 
+.organizer__list {
+    margin: 3em 5em;
+    list-style: decimal;
+}
+
 @media ( max-width: 768px ) {
     .farms {
         gap: 0.3em;

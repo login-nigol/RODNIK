@@ -71,4 +71,12 @@ header {
     .header__search-input {
         display: none;
     }
+
+    .logo-svg {
+        display: none;
+    }
+
+    .logo-label {
+        width: 3em;
+    }
 }

@@ -1,1 +1,18 @@
 /* css/footer.css */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__right {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+}
