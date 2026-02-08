@@ -25,23 +25,28 @@ export async function loadPage(pageId, contentEl) {
     // меняю title при навигации (SPA)
     document.title = TITLES[pageId] || 'РОДНИКЪ';
 
-    // уводим текущий контент в fade (CSS-анимация)
-    // contentEl.classList.add('is-fade');
+    // запускаем fade-out
+    contentEl.classList.add('is-fade');
 
     // грузим страницу
     const response = await fetch(url);
     const html = await response.text(); // превращаем ответ в строку HTML
 
     // подменяем HTML, пока контейнер "прозрачный"
-    contentEl.innerHTML = html;
+    // contentEl.innerHTML = html;
+
+    // ждём окончания fade-out
+    setTimeout(() => {
+        contentEl.innerHTML = html;    
 
     // сообщаю приложению, что страница загружена (для инициализации логики страницы)
     contentEl.dispatchEvent(new CustomEvent('page:loaded', {
         detail: { pageId }
     }));
 
-    // 4) на следующем кадре включаем проявление
-    // requestAnimationFrame(() => {
-    //     contentEl.classList.remove('is-fade');
-    // });
+    // fade-in
+    requestAnimationFrame(() => {
+        contentEl.classList.remove('is-fade');
+    });
+    }, 400); // появление новой страницы
 }

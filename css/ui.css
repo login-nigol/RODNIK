@@ -25,7 +25,9 @@
 .cart-item img {
     display: block;
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    aspect-ratio: 8 / 5; /* резерв места по у, для картинки */
+    /* object-fit: cover; гарантирует что, нет прыжков, сетка ровная */
 }
 
 /* кнопки карточек продуктов и корзины */
@@ -51,7 +53,7 @@
     background-color: #aed581;
 }
 
-/* иконка корзины */
+/* иконка/кнопка корзины */
 .product-card__add {
     display: inline-block;
     width: clamp(2em, 3vw, 3em);
@@ -62,6 +64,19 @@
     border: 0.15em solid #e0e0e0;
     border-radius: 0.5em;
     cursor: pointer;
+}
+
+/* кнопка авторизации */
+.header__login-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.login-icon {
+    display: block;
+    width: 1.7em;
+    height: 1.7em;
+    fill: #777;
 }
 
 @media ( max-width: 768px ) {

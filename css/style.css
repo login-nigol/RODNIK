@@ -58,6 +58,21 @@ footer {
     text-align: center;
 }
 
+/* контейнер контента */
+#content {
+    transition: opacity 0.5s ease;
+}
+
+/* состояние исчезает */
+#content.is-fade {
+    opacity: 0;
+}
+
+/* уважуха) - отключение анимаций по системной настройке */
+@media (prefers-reduced-motion: reduce) {
+    #content { transition: none; }
+}
+
 @media ( max-width: 768px ) {
     body {
         grid-template-columns: 1fr;

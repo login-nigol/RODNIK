@@ -52,6 +52,6 @@ header {
     }
 
     .header__search-input {
-        min-width: 100%;
+        display: none;
     }
 }

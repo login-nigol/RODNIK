@@ -24,10 +24,21 @@
     </form>
 
 
+    <!-- inline SVG -->
     <div class="header__login">
-      <button class="burger" type="button" aria-label="Открыть меню"
+      <button class="burger" 
+        type="button" 
+        aria-label="Открыть меню"
         aria-expanded="false">
-        ☰
+        <svg xmlns="http://www.w3.org/2000/svg"
+            class="burger__icon" 
+            viewBox="0 0 32 32" 
+            aria-hidden="true">
+          <path d="M12 2h20v4H12V2zM12 14h20v4H12v-4zM12 26h20v4H12v-4z
+            M0 4c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4z
+            M0 16c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4z
+            M0 28c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4z"/>
+        </svg>
       </button>
 
       <a href="#" class="header__login-link">Вход</a>
@@ -55,7 +66,7 @@
   </nav>
 
   <main id="content" class="content">
-    main - контейнер для фермерского продукта: фото + описание
+    <!-- main - контейнер для фермерского продукта: фото + описание -->
   </main>
 
   <footer>
