@@ -83,6 +83,6 @@
         max-height: 60vh;
         opacity: 1;
         transform: translateY(10);
-        pointer-events: auto;
+        pointer-events: all;
     }
 }
