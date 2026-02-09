@@ -3,3 +3,4 @@
 РОДНИКЪ - Фермерские продукты
 
 <a href="https://login-nigol.github.io/RODNIK/">РОДНИКЪ</a>
+<a href="https://login-nigol.github.io/RODNIK/report/">report</a>
